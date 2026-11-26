@@ -1,0 +1,92 @@
+/*
+ * Color palette for the Capítulo Estudiantil UD de Acolfísica website.
+ * Sampled from the chapter's flyers (deep space navy, indigo, violet, teal).
+ * Anchors taken directly from the flyers: violet-600 #6f4792, indigo-400 #7473d6,
+ * teal-600 #068a8b, space-900 #181330, space-950 #0a0c16.
+ * Text/background pairs below meet WCAG AA (contrast >= 4.5:1).
+ */
+
+:root {
+  /* violet */
+  --violet-50: #f8f6fa;
+  --violet-100: #e6dfec;
+  --violet-200: #d4c8de;
+  --violet-300: #c0afd0;
+  --violet-400: #ab94bf;
+  --violet-500: #9375ad;
+  --violet-600: #6f4792;
+  --violet-700: #543770;
+  --violet-800: #3e2a55;
+  --violet-900: #291e3d;
+  --violet-950: #161325;
+
+  /* indigo */
+  --indigo-50: #f8f8fd;
+  --indigo-100: #dedef5;
+  --indigo-200: #c3c2ed;
+  --indigo-300: #a3a2e4;
+  --indigo-400: #7473d6;
+  --indigo-500: #605fb1;
+  --indigo-600: #4f4f94;
+  --indigo-700: #404178;
+  --indigo-800: #32335e;
+  --indigo-900: #242545;
+  --indigo-950: #17182d;
+
+  /* teal */
+  --teal-50: #f3f9f9;
+  --teal-100: #d4ebeb;
+  --teal-200: #b5dcdc;
+  --teal-300: #93cccd;
+  --teal-400: #6ebbbb;
+  --teal-500: #44a7a8;
+  --teal-600: #068a8b;
+  --teal-700: #07686b;
+  --teal-800: #084c52;
+  --teal-900: #09333a;
+  --teal-950: #0a1b24;
+
+  /* space */
+  --space-50: #f4f4f8;
+  --space-100: #e8e7f0;
+  --space-200: #cfcde0;
+  --space-300: #a9a6c2;
+  --space-400: #7f7b9e;
+  --space-500: #5c587d;
+  --space-600: #433f62;
+  --space-700: #2f2b4c;
+  --space-800: #221d3c;
+  --space-900: #181330;
+  --space-950: #0a0c16;
+
+  /* Brand gradient (header, footer, hero): navy -> indigo -> violet, as in the flyers */
+  --gradient-brand: linear-gradient(135deg, var(--space-950) 0%, var(--indigo-900) 45%, var(--violet-800) 100%);
+
+  /* Light theme (default) */
+  --color-bg: #ffffff;
+  --color-surface: var(--violet-50);
+  --color-border: var(--space-100);
+  --color-text: var(--space-900);
+  --color-text-muted: var(--space-500);
+  --color-heading: var(--violet-900);
+  --color-link: var(--violet-700);
+  --color-primary: var(--violet-600);
+  --color-on-primary: #ffffff;
+  --color-accent: var(--teal-700);
+  --color-header-bg: var(--gradient-brand);
+  --color-on-header: #ffffff;
+}
+
+/* Dark theme: set data-theme="dark" on <html> (js/theme.js) */
+[data-theme="dark"] {
+  --color-bg: var(--space-950);
+  --color-surface: var(--space-900);
+  --color-border: var(--space-700);
+  --color-text: var(--space-100);
+  --color-text-muted: var(--space-300);
+  --color-heading: var(--violet-200);
+  --color-link: var(--violet-300);
+  --color-primary: var(--violet-600);
+  --color-on-primary: #ffffff;
+  --color-accent: var(--teal-400);
+}
